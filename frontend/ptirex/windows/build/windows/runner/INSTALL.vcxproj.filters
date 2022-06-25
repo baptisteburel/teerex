@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Bubu\Documents\Cours_ITI5\hackacton\ptirex\build\windows\CMakeFiles\e2e66670079343ced925aa1e5b4f063e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{86E8818E-AC4A-3CD0-848A-11BA6F0A1877}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
