@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20220625013917",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "forum_post",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "desription",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ForumPost",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "company",
+      "otherEntityRelationshipName": "forumPost",
+      "relationshipName": "company",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "tag",
+      "otherEntityRelationshipName": "forumPost",
+      "relationshipName": "tag",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

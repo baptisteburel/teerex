@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity ForumPost.
+    -->
+    <changeSet id="20220625013917-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="company_id"
+                                 baseTableName="forum_post"
+                                 constraintName="fk_forum_post__company_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="company"/>
+
+        <addForeignKeyConstraint baseColumnNames="tag_id"
+                                 baseTableName="forum_post"
+                                 constraintName="fk_forum_post__tag_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tag"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20220625013915",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tag",
+  "fields": [
+    {
+      "fieldName": "tagName",
+      "fieldType": "TagNames",
+      "fieldValues": "ENERGIE,EMISSION"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Tag",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "forumPost",
+      "otherEntityRelationshipName": "tag",
+      "relationshipName": "forumPost",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

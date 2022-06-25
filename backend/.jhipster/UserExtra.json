@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20220625013916",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "user_extra",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserExtra",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userextra",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "company",
+      "otherEntityRelationshipName": "userExtra",
+      "relationshipName": "company",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

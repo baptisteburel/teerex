@@ -1,0 +1,35 @@
+entity Company {
+	name String,
+    description String,
+    mailContact String,
+    numeroContact String,
+    urlSiteVitrine String,
+}
+
+entity Tag {
+    tagName TagNames,
+}
+
+enum TagNames {
+	ENERGIE, EMISSION
+}
+
+entity UserExtra{}
+
+entity ForumPost {
+	title String,
+    desription String
+}
+
+relationship OneToOne{
+    UserExtra{user} to User{userextra}
+}
+
+relationship OneToMany {
+	Company to ForumPost{company}
+    Tag to ForumPost{tag}
+    Company to UserExtra{company}
+}
+
+paginate Company, ForumPost with pagination
+service Company, ForumPost, Tag, UserExtra with serviceClass

@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20220625013914",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "company",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mailContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroContact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "urlSiteVitrine",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Company",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "forumPost",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "forumPost",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "userExtra",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "userExtra",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
